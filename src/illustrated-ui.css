@@ -1,0 +1,11 @@
+/* Existing artwork is reused; label text remains HTML. */
+.art-button{background:url('./assets/ui/botao-ameixa.png') center/108% 132% no-repeat;color:#fff8ed;min-height:60px;min-width:210px;padding:16px 28px;border:0;border-radius:14px;font:700 17px Georgia,serif;text-shadow:0 1px 2px #352c46}
+.art-button.secondary{background-image:url('./assets/ui/botao-marfim.png');background-size:121% 167%;color:#352c46;text-shadow:none}
+#inspect.art-button,#answer-fields .art-button{min-width:0;font-size:16px}
+.clue-dialog{background:url('./assets/ui/painel-dialogo.png') center/112% 192% no-repeat;border:0;box-shadow:none}
+@media(max-width:520px){.scene-cover .art-button{min-width:190px;min-height:49px;padding:10px 22px;font-size:15px}#onboarding-next.art-button{font-size:15px;min-width:160px}}
+@media(max-height:450px){.clue-dialog{background:#faf5e9;border:3px solid #b8a5cf;padding:20px}}
+
+
+.clue-character{display:block;width:142px;height:106px;margin:-16px auto 0;pointer-events:none}
+@media(max-height:650px){.clue-character{width:100px;height:75px;margin:-15px auto 0}}
