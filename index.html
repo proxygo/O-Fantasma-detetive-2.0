@@ -3,7 +3,7 @@
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#352c46"><title>Fantasma Detetive 2.0</title></head>
 <body>
 <main class="app">
-<header class="topbar"><a class="brand" href="./">Fantasma Detetive <span>2.0</span></a><nav aria-label="Opções da partida"><button id="help" class="quiet">Como jogar</button><button id="restart" class="quiet">Reiniciar</button><a class="community-link" href="https://proxygo.com.br/fantasma-detetive.html#comunidade" target="_blank" rel="noopener">Curtir e comentar ♡ <span class="sr-only">(abre em outra aba)</span></a></nav></header>
+<header class="topbar"><a class="brand" href="./">Fantasma Detetive <span>2.0</span></a><nav aria-label="Opções da partida"><button id="help" class="quiet">Como jogar</button><button id="restart" class="quiet">Reiniciar</button><iframe class="game-visits" data-community-widget="views" title="Visitas ao jogo" src="about:blank" width="130" height="68" tabindex="-1" referrerpolicy="strict-origin-when-cross-origin"></iframe></nav></header>
 <div class="layout">
 <section class="game-panel" aria-label="Biblioteca explorável">
 <div class="scene-top"><span>Biblioteca <span class="separator">/</span> <span id="mode">Boas-vindas</span></span><span id="progress">0 / 4 pistas</span></div>
@@ -28,6 +28,7 @@
 <ol id="clues" class="clue-list" aria-label="Pistas descobertas"></ol>
 <details class="accessible-explore"><summary>Explorar por lista</summary><p class="assist">Uma alternativa para investigar com teclado, toque ou leitor de tela, sem percorrer o cenário.</p><label for="object-select">Escolha um objeto</label><select id="object-select"></select><button id="inspect" class="secondary art-button" disabled><img src="/src/assets/ui/kit-v01/icone_lupa.png" alt="" width="26" height="26">Investigar objeto</button></details>
 <section class="goal"><h3>Resolver o mistério</h3><p id="answer-lock">A resposta será liberada ao reunir as quatro pistas.</p><form id="answer-form"><fieldset id="answer-fields" disabled><label for="answer">Qual é a resposta certa?</label><input id="answer" aria-describedby="answer-feedback" name="answer" inputmode="numeric" autocomplete="off" maxlength="40"><button type="submit" class="art-button">Responder</button></fieldset><p id="answer-feedback" role="status"></p></form></section>
+<section class="game-community" aria-label="Participar"><iframe class="game-likes" data-community-widget="likes" title="Curtir o jogo e ver curtidas" src="about:blank" width="240" height="80" referrerpolicy="strict-origin-when-cross-origin"></iframe><a class="community-link" href="https://proxygo.com.br/fantasma-detetive.html#comunidade" target="_blank" rel="noopener">Comentários e sugestões <span class="sr-only">(abre em outra aba)</span></a></section>
 </aside></div>
 <footer>Um pequeno mistério na biblioteca · Progresso disponível durante esta partida.</footer>
 <p id="announcement" class="sr-only" aria-live="polite"></p>
