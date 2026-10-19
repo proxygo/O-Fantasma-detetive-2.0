@@ -3,14 +3,14 @@
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#352c46"><title>Fantasma Detetive 2.0</title></head>
 <body>
 <main class="app">
-<header class="topbar"><a class="brand" href="./">Fantasma Detetive <span>2.0</span></a><nav aria-label="Opções da partida"><button id="help" class="quiet">Como jogar</button><button id="restart" class="quiet">Reiniciar</button></nav></header>
+<header class="topbar"><a class="brand" href="./">Fantasma Detetive <span>2.0</span></a><nav aria-label="Opções da partida"><button id="help" class="quiet">Como jogar</button><button id="restart" class="quiet">Reiniciar</button><a class="community-link" href="https://proxygo.com.br/fantasma-detetive.html#comunidade" target="_blank" rel="noopener">Curtir e comentar ♡ <span class="sr-only">(abre em outra aba)</span></a></nav></header>
 <div class="layout">
 <section class="game-panel" aria-label="Biblioteca explorável">
 <div class="scene-top"><span>Biblioteca <span class="separator">/</span> <span id="mode">Boas-vindas</span></span><span id="progress">0 / 4 pistas</span></div>
 <div class="stage">
 <canvas id="game" width="960" height="600" tabindex="0" aria-label="Biblioteca. Use setas ou WASD para mover Capitio, espaço para frear e Enter para investigar um objeto próximo.">Explore os mesmos objetos pela lista no caderno de pistas.</canvas>
 <div id="start-panel" class="scene-cover"><p class="eyebrow">ACONCHEGUE-SE. OBSERVE. DESCUBRA.</p><h1>Todo mistério começa<br>com uma curiosidade.</h1><p>Explore a biblioteca com Capitio e siga quatro pistas.</p><button id="start" class="art-button" disabled>Carregando biblioteca…</button><p id="asset-status" role="status">Preparando seu cantinho de investigação.</p></div>
-<section id="ending" class="scene-cover" hidden aria-labelledby="ending-title"><p class="eyebrow">CASO ENCERRADO</p><h2 id="ending-title">Mistério resolvido!</h2><p id="ending-detail"></p><button id="play-again" class="art-button">Jogar novamente</button></section>
+<section id="ending" class="scene-cover" hidden aria-labelledby="ending-title"><p class="eyebrow">CASO ENCERRADO</p><h2 id="ending-title">Mistério resolvido!</h2><p id="ending-detail"></p><button id="play-again" class="art-button">Jogar novamente</button><a class="community-link" href="https://proxygo.com.br/fantasma-detetive.html#comunidade" target="_blank" rel="noopener">Curtir e comentar ♡ <span class="sr-only">(abre em outra aba)</span></a></section>
 </div>
 <div class="interaction-bar" aria-live="polite"><span id="nearby-description">Comece pela cadeira, à esquerda da biblioteca.</span><button id="nearby-inspect" disabled>Investigar <kbd>Enter</kbd></button></div>
 <div class="game-bottom"><p class="controls"><span><kbd>↑ ↓ ← →</kbd> ou <kbd>WASD</kbd> mover</span><span><kbd>Espaço</kbd> frear</span></p><div class="touch" aria-label="Controles de movimento">
@@ -40,8 +40,3 @@
 </dialog>
 <dialog id="dialog" class="clue-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-body"><canvas id="clue-character" class="clue-character" width="200" height="150" aria-hidden="true"></canvas><p class="eyebrow" id="dialog-eyebrow">PISTA ENCONTRADA</p><h2 id="dialog-title"></h2><p id="dialog-body"></p><p id="dialog-note" class="dialog-note">A pista fica no caderno. A exploração está pausada.</p><button id="close-dialog" class="art-button">Continuar explorando</button><p class="escape-hint"><kbd>Esc</kbd> também fecha</p></dialog>
 </main><script type="module" src="/src/main.ts"></script></body></html>
-
-
-
-
-
