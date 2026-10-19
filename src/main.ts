@@ -7,6 +7,14 @@ import { loadArt } from './assets.ts';
 import { render } from './render.ts';
 import { drawCharacter } from './character.ts';
 import { createCharacterAnimation, advanceCharacterAnimation, celebrateDiscovery } from './character-animation.ts';
+// The site hosts these small controls so its existing API permissions remain unchanged.
+if (location.hostname === 'proxygo.github.io' && location.pathname.startsWith('/O-Fantasma-detetive-2.0/')) {
+  for (const frame of document.querySelectorAll<HTMLIFrameElement>('[data-community-widget]')) {
+    frame.src = 'https://proxygo.com.br/fantasma-game-widget.html?mode=' + frame.dataset.communityWidget;
+  }
+} else {
+  for (const frame of document.querySelectorAll<HTMLIFrameElement>('[data-community-widget]')) frame.hidden = true;
+}
 function element<T extends HTMLElement>(id:string):T {
   const result=document.getElementById(id);if(!result)throw new Error('Elemento ausente: '+id);return result as T;
 }
