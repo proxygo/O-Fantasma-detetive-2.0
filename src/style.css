@@ -9,3 +9,5 @@ dialog{width:calc(100% - 32px);max-height:calc(100dvh - 32px);overflow:auto;bord
 @media(max-height:650px){.guide-character{display:none}.onboarding h2{margin-top:8px}.onboarding p{font-size:15px;margin-block:10px}.onboarding-bottom{margin-top:15px}.small-note{display:none}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}dialog::backdrop{backdrop-filter:none}}
 
+
+.community-link{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 12px;border-radius:10px;font-size:14px;line-height:1.4;text-align:center;text-underline-offset:4px}.topbar nav{flex-wrap:wrap;justify-content:flex-end}.scene-cover .community-link{margin-top:12px;color:#fff8ec}@media(max-width:520px){.topbar nav{max-width:210px}.community-link{font-size:12px;padding:6px 8px}}
